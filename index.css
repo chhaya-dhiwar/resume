@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+section {
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.Personal-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.my-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-info p {
+    font-size: 18px;
+    display: flex;
+  
+} 
+
+.my-img img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 20%; 
+  }
+
+p i{
+    margin-right: 10px;
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  } 
+  h2 span {
+    color: #ff6347;
+  }
+  
+h1 {
+    font-size: 30px;
+    color: #ff6347;
+    text-align: center;
+}
+
+h2, h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #555;
+}
+h4 {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 25px;  
+    font-weight: bold;
+}
+
+label {
+    font-size: 25px;
+    color: #555;
+    text-align: right;
+}
+p {
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #333;
+}
+
+.skills ul li {
+    list-style-type: none;
+    font-size: 25px;
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    font-size: 20px;
+}
+.Bechaler, .Computer, .expe {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px;
+  }
+
+  
+  .Bechaler p, .Computer p, .expe h4 {
+    flex-basis: 60%; 
+  }
+
+  .Bechaler label, .Computer label, .expe label {
+    text-align: right; 
+  }
+
+.projec-info, .about, .skills, .project, .education, .experience, .contact-form {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.contact-form input, .contact-form textarea {
+    width: 90%;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.skills ul li i, .contact-form i{
+    margin-right: 10px;
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  } 
+  .contact {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+button {
+    padding: 20px 30px;
+    margin: 0 45%;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .Personal-info {
+        flex-direction: column; /* Flex items ko vertically stack karta hai */
+        text-align: center; /* Text ko center karta hai */
+    }
+  
+    .my-img img {
+        max-width: 100%; /* Mobile view ke liye image ko full-width bana deta hai */
+        margin-bottom: 20px; /* Image aur text ke beech space */
+    }
+
+    .Bechaler, .Computer, .expe {
+        flex-direction: column; /* Flex items ko vertically stack karta hai */
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 24px; /* Font size ko chhota karta hai */
+    }
+
+    label, p {
+        font-size: 20px; /* Text size ko adjust karta hai */
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%; /* Mobile view ke liye input aur textarea ko full width karta hai */
+        padding: 10px; /* Padding thoda kam karta hai */
+    }
+
+    button {
+        width: 100%; /* Button ko full-width bana deta hai mobile view pe */
+        margin: 20px 0; /* Button ko vertically center karta hai */
+    }
+}
